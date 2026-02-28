@@ -1,23 +1,140 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
-<title>Blog | Retro Tech Life</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Tech Life | Terminal</title>
+    <style>
+        /* Variabili di colore per un facile cambio stile */
+        :root {
+            --neon-green: #39ff14;
+            --dark-bg: #0a0a0a;
+            --scanline-color: rgba(18, 16, 16, 0.1);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--neon-green);
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            overflow-x: hidden;
+            /* Effetto sfarfallio leggero */
+            animation: flicker 0.15s infinite;
+        }
+
+        /* Effetto Scanlines (Linee orizzontali dei vecchi monitor) */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(var(--scanline-color) 50%, rgba(0, 0, 0, 0) 50%);
+            background-size: 100% 4px;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border: 2px solid var(--neon-green);
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px var(--neon-green);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px var(--neon-green);
+        }
+
+        nav { margin-top: 15px; }
+        nav a {
+            color: var(--neon-green);
+            text-decoration: none;
+            margin-right: 20px;
+            text-transform: uppercase;
+        }
+        nav a:hover { background: var(--neon-green); color: black; }
+
+        /* Stile dei post */
+        .post {
+            border: 1px solid var(--neon-green);
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .post::after {
+            content: ">_";
+            position: absolute;
+            bottom: 10px; right: 10px;
+            animation: blink 1s infinite;
+        }
+
+        h2 { border-bottom: 1px solid var(--neon-green); padding-bottom: 5px; }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid var(--neon-green);
+            color: var(--neon-green);
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        /* Animazioni */
+        @keyframes flicker {
+            0% { opacity: 0.98; }
+            100% { opacity: 1; }
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+    </style>
 </head>
 <body>
 
-<h1>Blog Retro Tech Life</h1>
+<div class="container">
+    <header>
+        <div class="logo">RETRO-TECH-LIFE.SHOP</div>
+        <p>Sistema Operativo: v1.0.4 | Status: Online</p>
+        <nav>
+            <a href="#">[ HOME ]</a>
+            <a href="#">[ HARDWARE ]</a>
+            <a href="#">[ SOFTWARE ]</a>
+            <a href="#">[ ABOUT ]</a>
+        </nav>
+    </header>
 
-<ul>
-<li><a href="/blog/retro-computer-anni-80/">10 computer anni 80 che hanno fatto la storia</a></li>
-<li><a href="/blog/setup-retro-gaming/">Come creare una postazione retro gaming</a></li>
-</ul>
+    <main>
+        <article class="post">
+            <h2>BOOT_SEQUENCE: Inizializzazione Blog</h2>
+            <p><small>DATA: 2026-02-28 | AUTORE: Admin</small></p>
+            <p>Benvenuti su Retro Tech Life. Questo spazio è dedicato alla conservazione digitale e alla celebrazione dell'informatica classica.</p>
+            <a href="#" class="btn">ESEGUI LETTURA...</a>
+        </article>
 
-<p><a href="/">Torna alla home</a></p>
+        <article class="post">
+            <h2>RECENSIONE: Commodore 64 nel 2026</h2>
+            <p><small>DATA: 2026-02-25 | AUTORE: Admin</small></p>
+            <p>Ha ancora senso programmare in BASIC oggi? Esaminiamo le nuove periferiche per il leggendario "biscottone".</p>
+            <a href="#" class="btn">ESEGUI LETTURA...</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>____________________________________________________</p>
+        <p>FINE DELLA TRASMISSIONE - (C) 2026 RETRO TECH LIFE</p>
+    </footer>
+</div>
 
 </body>
 </html>
-<li>
-  <a href="/blog/oggetti-vintage-di-moda/">
-    10 Oggetti Vintage di Moda che stanno tornando
-  </a>
-</li>
