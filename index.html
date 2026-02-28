@@ -3,130 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Tech Life | Vintage Tech & Gear</title>
+    <title>Retro Tech Life | Vintage Gear & Affiliate</title>
     <style>
-        :root {
-            --main-green: #00ff41;
-            --bg-black: #0a0a0a;
-            --text-gray: #cccccc;
+        :root { --neon: #39ff14; --dark: #0f0f0f; --card: #1a1a1a; }
+        body { background: var(--dark); color: #eee; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        
+        /* Header stile Retro-Monitor */
+        header { 
+            background: #000; padding: 30px; text-align: center; 
+            border-bottom: 2px solid var(--neon); box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+        }
+        .logo { font-family: 'Courier New', monospace; color: var(--neon); font-size: 2.2rem; font-weight: bold; }
+
+        /* Griglia per Pinterest */
+        .grid { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; max-width: 1200px; margin: 40px auto; padding: 20px;
         }
 
-        body {
-            background-color: var(--bg-black);
-            color: var(--text-gray);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Più leggibile per il marketing */
-            margin: 0; padding: 0;
+        .item-card { 
+            background: var(--card); border-radius: 10px; overflow: hidden; 
+            border: 1px solid #333; transition: 0.3s;
         }
-
-        header {
-            background: #111;
-            border-bottom: 3px solid var(--main-green);
-            padding: 20px;
-            text-align: center;
+        .item-card:hover { border-color: var(--neon); transform: translateY(-5px); }
+        .item-card img { width: 100%; height: 250px; object-fit: cover; }
+        
+        .content { padding: 15px; }
+        .tag { background: var(--neon); color: #000; font-size: 0.7rem; font-weight: bold; padding: 3px 8px; border-radius: 3px; }
+        
+        .buy-btn { 
+            display: block; background: transparent; color: var(--neon); 
+            border: 1px solid var(--neon); text-align: center; padding: 10px; 
+            text-decoration: none; margin-top: 15px; font-weight: bold; border-radius: 5px;
         }
-
-        .logo {
-            font-family: 'Courier New', monospace;
-            color: var(--main-green);
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-shadow: 0 0 10px var(--main-green);
-        }
-
-        /* Griglia Articoli per Pinterest */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            padding: 0 20px;
-        }
-
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--main-green);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover; /* Importante per le foto dei prodotti */
-            border-bottom: 1px solid #333;
-        }
-
-        .card-content { padding: 20px; }
-
-        .card h2 {
-            color: var(--main-green);
-            font-size: 1.4rem;
-            margin: 0 0 10px 0;
-        }
-
-        .price-tag {
-            background: var(--main-green);
-            color: black;
-            padding: 5px 10px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .btn-affiliate {
-            display: block;
-            text-align: center;
-            background: transparent;
-            color: var(--main-green);
-            border: 1px solid var(--main-green);
-            padding: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: 0.3s;
-        }
-
-        .btn-affiliate:hover {
-            background: var(--main-green);
-            color: black;
-        }
+        .buy-btn:hover { background: var(--neon); color: #000; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">RETRO-TECH-LIFE</div>
-    <p style="color: var(--main-green)">Vintage Hardware & Retro Gaming Finds</p>
+    <div class="logo">RETRO-TECH-LIFE.SHOP</div>
+    <p>La tua dose quotidiana di nostalgia tecnologica</p>
 </header>
 
-<div class="container">
-    <article class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Mechanical Keyboard">
-        <div class="card-content">
-            <div class="price-tag">TOP TECH 2026</div>
-            <h2>Le Migliori Tastiere Meccaniche Retro</h2>
-            <p>Scopri quali modelli moderni offrono lo stesso feeling delle leggendarie tastiere IBM degli anni '80.</p>
-            <a href="#" class="btn-affiliate">VEDI SU AMAZON →</a>
+<div class="grid">
+    <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500" alt="Retro Gaming">
+        <div class="content">
+            <span class="tag">CONSIGLIATO</span>
+            <h3>Console Retro Gaming 2026</h3>
+            <p>Le migliori soluzioni per giocare ai classici anni '90 su schermi moderni.</p>
+            <a href="TUO_LINK_AFFILIAZIONE" class="buy-btn">Vedi Prezzo su Amazon</a>
         </div>
-    </article>
+    </div>
 
-    <article class="card">
-        <img src="https://via.placeholder.com/400x250" alt="GameBoy">
-        <div class="card-content">
-            <div class="price-tag">GUIDA</div>
-            <h2>Moddare il GameBoy nel 2026</h2>
-            <p>Guida completa su come installare schermi IPS retroilluminati sulle vecchie console Nintendo.</p>
-            <a href="#" class="btn-affiliate">LEGGI LA GUIDA →</a>
+    <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500" alt="Meccanica">
+        <div class="content">
+            <span class="tag">OFFERTA</span>
+            <h3>Tastiere Meccaniche "Clicky"</h3>
+            <p>Ritrova il suono e il feeling delle vecchie macchine da scrivere e dei PC IBM.</p>
+            <a href="TUO_LINK_AFFILIAZIONE" class="buy-btn">Vedi Offerta</a>
         </div>
-    </article>
+    </div>
 </div>
 
 </body>
