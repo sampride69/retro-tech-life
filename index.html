@@ -3,69 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Tech Life | Vintage Gear & Affiliate</title>
+    <title>Retro Tech Life | Vintage Lifestyle & Home</title>
     <style>
-        :root { --neon: #39ff14; --dark: #0f0f0f; --card: #1a1a1a; }
-        body { background: var(--dark); color: #eee; font-family: 'Segoe UI', sans-serif; margin: 0; }
-        
-        /* Header stile Retro-Monitor */
-        header { 
-            background: #000; padding: 30px; text-align: center; 
-            border-bottom: 2px solid var(--neon); box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
-        }
-        .logo { font-family: 'Courier New', monospace; color: var(--neon); font-size: 2.2rem; font-weight: bold; }
-
-        /* Griglia per Pinterest */
-        .grid { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 20px; max-width: 1200px; margin: 40px auto; padding: 20px;
+        :root {
+            --vintage-gold: #c5a059; /* Un oro antico più adatto all'arredamento */
+            --bg-dark: #121212;
+            --accent-green: #39ff14;
         }
 
-        .item-card { 
-            background: var(--card); border-radius: 10px; overflow: hidden; 
-            border: 1px solid #333; transition: 0.3s;
+        body {
+            background-color: var(--bg-dark);
+            color: #f4f4f4;
+            font-family: 'Georgia', serif; /* Font più elegante per moda/arredamento */
+            margin: 0; padding: 0;
         }
-        .item-card:hover { border-color: var(--neon); transform: translateY(-5px); }
-        .item-card img { width: 100%; height: 250px; object-fit: cover; }
-        
-        .content { padding: 15px; }
-        .tag { background: var(--neon); color: #000; font-size: 0.7rem; font-weight: bold; padding: 3px 8px; border-radius: 3px; }
-        
-        .buy-btn { 
-            display: block; background: transparent; color: var(--neon); 
-            border: 1px solid var(--neon); text-align: center; padding: 10px; 
-            text-decoration: none; margin-top: 15px; font-weight: bold; border-radius: 5px;
+
+        header {
+            background: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--vintage-gold);
         }
-        .buy-btn:hover { background: var(--neon); color: #000; }
+
+        .logo {
+            font-family: 'Courier New', monospace;
+            color: var(--vintage-gold);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+        }
+
+        /* Navigazione per Categorie */
+        nav { margin-top: 20px; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        nav a:hover { color: var(--vintage-gold); }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            border-left: 4px solid var(--vintage-gold);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Griglia flessibile */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: 0.3s;
+            border: 1px solid #333;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--vintage-gold); }
+
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+
+        .card-body { padding: 20px; }
+        
+        .category-tag {
+            font-size: 0.7rem;
+            background: var(--vintage-gold);
+            color: #000;
+            padding: 3px 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .card h3 { margin: 15px 0 10px 0; color: var(--vintage-gold); }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid var(--vintage-gold);
+            padding-bottom: 2px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">RETRO-TECH-LIFE.SHOP</div>
-    <p>La tua dose quotidiana di nostalgia tecnologica</p>
+    <div class="logo">RETRO-TECH-LIFE</div>
+    <p>Tecnologia, Arredamento e Rimedi d'altri tempi.</p>
+    <nav>
+        <a href="#arredamento">Arredamento</a>
+        <a href="#moda">Moda</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#tech">Tech</a>
+    </nav>
 </header>
 
-<div class="grid">
-    <div class="item-card">
-        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500" alt="Retro Gaming">
-        <div class="content">
-            <span class="tag">CONSIGLIATO</span>
-            <h3>Console Retro Gaming 2026</h3>
-            <p>Le migliori soluzioni per giocare ai classici anni '90 su schermi moderni.</p>
-            <a href="TUO_LINK_AFFILIAZIONE" class="buy-btn">Vedi Prezzo su Amazon</a>
+<div class="container">
+    
+    <h2 class="section-title" id="arredamento">HOME DECOR VINTAGE</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=500" alt="Arredamento">
+            <div class="card-body">
+                <span class="category-tag">Arredamento</span>
+                <h3>5 Mobili Mid-Century per il tuo Salotto</h3>
+                <p>Come integrare pezzi degli anni '60 in una casa moderna.</p>
+                <a href="#" class="btn-link">Leggi i consigli →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=500" alt="Luce">
+            <div class="card-body">
+                <span class="category-tag">Affiliazione</span>
+                <h3>Lampade Space Age: Guida all'acquisto</h3>
+                <p>I modelli iconici che puoi trovare ancora oggi su Amazon ed eBay.</p>
+                <a href="#" class="btn-link">Vedi i modelli →</a>
+            </div>
         </div>
     </div>
 
-    <div class="item-card">
-        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500" alt="Meccanica">
-        <div class="content">
-            <span class="tag">OFFERTA</span>
-            <h3>Tastiere Meccaniche "Clicky"</h3>
-            <p>Ritrova il suono e il feeling delle vecchie macchine da scrivere e dei PC IBM.</p>
-            <a href="TUO_LINK_AFFILIAZIONE" class="buy-btn">Vedi Offerta</a>
+    <h2 class="section-title" id="lifestyle" style="margin-top: 60px;">RIMEDI DELLA NONNA</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=500" alt="Erbe">
+            <div class="card-body">
+                <span class="category-tag">Lifestyle</span>
+                <h3>Tisane Naturali: I Segreti della Nonna</h3>
+                <p>Metodi antichi per dormire meglio e depurarsi naturalmente.</p>
+                <a href="#" class="btn-link">Scopri le ricette →</a>
+            </div>
         </div>
     </div>
+
 </div>
 
 </body>
