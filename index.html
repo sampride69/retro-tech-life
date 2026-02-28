@@ -3,56 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Tech Life | Mainframe</title>
+    <title>Retro Tech Life | Vintage Tech & Gear</title>
     <style>
+        :root {
+            --main-green: #00ff41;
+            --bg-black: #0a0a0a;
+            --text-gray: #cccccc;
+        }
+
         body {
-            background-color: #050505;
-            color: #00ff41;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-shadow: 0 0 8px #00ff41;
+            background-color: var(--bg-black);
+            color: var(--text-gray);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Più leggibile per il marketing */
+            margin: 0; padding: 0;
         }
-        .box {
-            border: 2px solid #00ff41;
-            padding: 30px;
+
+        header {
+            background: #111;
+            border-bottom: 3px solid var(--main-green);
+            padding: 20px;
             text-align: center;
-            background: rgba(0, 255, 65, 0.05);
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
         }
-        h1 { font-size: 2rem; margin-bottom: 10px; }
-        .cursor { animation: blink 1s infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid #00ff41;
-            padding: 10px 20px;
+
+        .logo {
+            font-family: 'Courier New', monospace;
+            color: var(--main-green);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--main-green);
+        }
+
+        /* Griglia Articoli per Pinterest */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--main-green);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Importante per le foto dei prodotti */
+            border-bottom: 1px solid #333;
+        }
+
+        .card-content { padding: 20px; }
+
+        .card h2 {
+            color: var(--main-green);
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+        }
+
+        .price-tag {
+            background: var(--main-green);
+            color: black;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
             display: inline-block;
-            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn-affiliate {
+            display: block;
+            text-align: center;
+            background: transparent;
+            color: var(--main-green);
+            border: 1px solid var(--main-green);
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
             transition: 0.3s;
         }
-        nav a:hover {
-            background: #00ff41;
-            color: #000;
+
+        .btn-affiliate:hover {
+            background: var(--main-green);
+            color: black;
         }
     </style>
 </head>
 <body>
 
-    <div class="box">
-        <h1>RETRO-TECH-LIFE<span class="cursor">_</span></h1>
-        <p>CONSOLE ACCESS GRANTED</p>
-        <p>Benvenuti nel mio archivio digitale.</p>
-        <nav>
-            <a href="about/index.html">ENTRA NEL SISTEMA</a>
-        </nav>
-    </div>
+<header>
+    <div class="logo">RETRO-TECH-LIFE</div>
+    <p style="color: var(--main-green)">Vintage Hardware & Retro Gaming Finds</p>
+</header>
+
+<div class="container">
+    <article class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Mechanical Keyboard">
+        <div class="card-content">
+            <div class="price-tag">TOP TECH 2026</div>
+            <h2>Le Migliori Tastiere Meccaniche Retro</h2>
+            <p>Scopri quali modelli moderni offrono lo stesso feeling delle leggendarie tastiere IBM degli anni '80.</p>
+            <a href="#" class="btn-affiliate">VEDI SU AMAZON →</a>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="https://via.placeholder.com/400x250" alt="GameBoy">
+        <div class="card-content">
+            <div class="price-tag">GUIDA</div>
+            <h2>Moddare il GameBoy nel 2026</h2>
+            <p>Guida completa su come installare schermi IPS retroilluminati sulle vecchie console Nintendo.</p>
+            <a href="#" class="btn-affiliate">LEGGI LA GUIDA →</a>
+        </div>
+    </article>
+</div>
 
 </body>
 </html>
