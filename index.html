@@ -3,130 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Tech Life | Terminal</title>
+    <title>Retro Tech Life | Mainframe</title>
     <style>
-        :root {
-            --glow-color: #00fa9a;
-            --bg-color: #050505;
-        }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--glow-color);
+            background-color: #050505;
+            color: #00ff41;
             font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            text-shadow: 0 0 5px var(--glow-color);
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-shadow: 0 0 8px #00ff41;
         }
-
-        /* Effetto Monitor Vecchio */
-        body::after {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-            background-size: 100% 3px, 3px 100%;
-            pointer-events: none;
-            z-index: 10;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 800px;
-            border: 2px solid var(--glow-color);
-            margin: 40px 0;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 250, 154, 0.2);
-            background: rgba(0, 0, 0, 0.9);
-        }
-
-        header {
-            border-bottom: 2px double var(--glow-color);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        .box {
+            border: 2px solid #00ff41;
+            padding: 30px;
             text-align: center;
+            background: rgba(0, 255, 65, 0.05);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
         }
-
-        .logo { font-size: 1.8rem; letter-spacing: 5px; font-weight: bold; }
-
-        nav { margin: 15px 0; }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        .cursor { animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        
         nav a {
-            color: var(--glow-color);
+            color: #fff;
             text-decoration: none;
-            border: 1px solid var(--glow-color);
-            padding: 5px 15px;
-            margin: 0 5px;
-            font-size: 0.9rem;
-            transition: all 0.3s;
+            border: 1px solid #00ff41;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
         }
         nav a:hover {
-            background: var(--glow-color);
-            color: black;
-            box-shadow: 0 0 10px var(--glow-color);
+            background: #00ff41;
+            color: #000;
         }
-
-        .post {
-            margin-bottom: 40px;
-            padding: 15px;
-            border-left: 3px solid var(--glow-color);
-        }
-
-        .post h2 { margin-top: 0; text-transform: uppercase; }
-
-        .cursor {
-            display: inline-block;
-            width: 10px;
-            height: 1.2rem;
-            background: var(--glow-color);
-            animation: blink 0.8s infinite;
-            vertical-align: middle;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        footer { font-size: 0.7rem; opacity: 0.7; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <div class="logo">RETRO-TECH-LIFE.SHOP</div>
-            <nav>
-                <a href="index.html">HOME</a>
-                <a href="#">ARCHIVIO</a>
-                <a href="#">HARDWARE</a>
-            </nav>
-        </header>
-
-        <main id="terminal">
-            <article class="post">
-                <h2>> SYSTEM_INITIALIZED</h2>
-                <p>Benvenuto visitatore. Accesso al database completato con successo.</p>
-                <p>In questo blog esploreremo la tecnologia che ha plasmato il presente, dai processori a 8-bit alle BBS degli anni '90.</p>
-                <p>Stato del sistema: <span style="color: #fff;">OPERATIVO</span><span class="cursor"></span></p>
-            </article>
-
-            <article class="post">
-                <h2>> ULTIMI_CARICAMENTI</h2>
-                <p>- Il fascino dei monitor a fosfori verdi</p>
-                <p>- Come recuperare dati da un floppy disk del 1985</p>
-                <a href="#" style="color: white;">[ LEGGI TUTTO ]</a>
-            </article>
-        </main>
+    <div class="box">
+        <h1>RETRO-TECH-LIFE<span class="cursor">_</span></h1>
+        <p>CONSOLE ACCESS GRANTED</p>
+        <p>Benvenuti nel mio archivio digitale.</p>
+        <nav>
+            <a href="about/index.html">ENTRA NEL SISTEMA</a>
+        </nav>
     </div>
-
-    <footer>
-        RT-OS v1.0 - Connessione sicura (tentativo in corso...)
-    </footer>
 
 </body>
 </html>
