@@ -1,135 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retro Tech Life | Vintage Lifestyle & Cultura Retrò</title>
-<meta name="description" content="Retro Tech Life è il punto di riferimento per lifestyle retrò: arredamento vintage, moda anni 80/90, oggetti iconici e cultura nostalgia.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Tech Life | Terminal</title>
+    <style>
+        :root {
+            --glow-color: #00fa9a;
+            --bg-color: #050505;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#0f0f0f,#1a0026);
-color:#ffffff;
-}
+        body {
+            background-color: var(--bg-color);
+            color: var(--glow-color);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-shadow: 0 0 5px var(--glow-color);
+        }
 
-header{
-padding:80px 20px;
-text-align:center;
-}
+        /* Effetto Monitor Vecchio */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background-size: 100% 3px, 3px 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
 
-h1{
-font-size:48px;
-margin-bottom:15px;
-color:#ff4d6d;
-}
+        .container {
+            width: 90%;
+            max-width: 800px;
+            border: 2px solid var(--glow-color);
+            margin: 40px 0;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 250, 154, 0.2);
+            background: rgba(0, 0, 0, 0.9);
+        }
 
-.subtitle{
-font-size:20px;
-color:#cccccc;
-max-width:700px;
-margin:auto;
-}
+        header {
+            border-bottom: 2px double var(--glow-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-.section{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-}
+        .logo { font-size: 1.8rem; letter-spacing: 5px; font-weight: bold; }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
-}
+        nav { margin: 15px 0; }
+        nav a {
+            color: var(--glow-color);
+            text-decoration: none;
+            border: 1px solid var(--glow-color);
+            padding: 5px 15px;
+            margin: 0 5px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            background: var(--glow-color);
+            color: black;
+            box-shadow: 0 0 10px var(--glow-color);
+        }
 
-.card{
-background:#1b1b1b;
-padding:25px;
-border-radius:12px;
-transition:0.3s;
-}
+        .post {
+            margin-bottom: 40px;
+            padding: 15px;
+            border-left: 3px solid var(--glow-color);
+        }
 
-.card:hover{
-transform:translateY(-5px);
-background:#222;
-}
+        .post h2 { margin-top: 0; text-transform: uppercase; }
 
-h2{
-margin-top:0;
-color:#ff4d6d;
-}
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2rem;
+            background: var(--glow-color);
+            animation: blink 0.8s infinite;
+            vertical-align: middle;
+        }
 
-a{
-color:#ff4d6d;
-text-decoration:none;
-font-weight:bold;
-}
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:12px 24px;
-background:#ff4d6d;
-color:#fff;
-border-radius:30px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#111;
-font-size:14px;
-color:#888;
-margin-top:60px;
-}
-</style>
+        footer { font-size: 0.7rem; opacity: 0.7; margin-bottom: 20px; }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>Retro Tech Life</h1>
-<p class="subtitle">
-Nostalgia retrò, stile vintage e cultura anni 80/90.
-Arredamento, moda, oggetti iconici e tech nostalgia.
-</p>
-<a href="/blog/" class="button">Scopri il Blog →</a>
-</header>
+    <div class="container">
+        <header>
+            <div class="logo">RETRO-TECH-LIFE.SHOP</div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="#">ARCHIVIO</a>
+                <a href="#">HARDWARE</a>
+            </nav>
+        </header>
 
-<div class="section">
+        <main id="terminal">
+            <article class="post">
+                <h2>> SYSTEM_INITIALIZED</h2>
+                <p>Benvenuto visitatore. Accesso al database completato con successo.</p>
+                <p>In questo blog esploreremo la tecnologia che ha plasmato il presente, dai processori a 8-bit alle BBS degli anni '90.</p>
+                <p>Stato del sistema: <span style="color: #fff;">OPERATIVO</span><span class="cursor"></span></p>
+            </article>
 
-<div class="grid">
+            <article class="post">
+                <h2>> ULTIMI_CARICAMENTI</h2>
+                <p>- Il fascino dei monitor a fosfori verdi</p>
+                <p>- Come recuperare dati da un floppy disk del 1985</p>
+                <a href="#" style="color: white;">[ LEGGI TUTTO ]</a>
+            </article>
+        </main>
+    </div>
 
-<div class="card">
-<h2>🏠 Arredamento Vintage</h2>
-<p>Idee per trasformare la tua casa in uno spazio retrò pieno di personalità.</p>
-</div>
-
-<div class="card">
-<h2>👕 Moda Anni 80/90</h2>
-<p>Trend, outfit iconici e capi vintage che stanno tornando di moda.</p>
-</div>
-
-<div class="card">
-<h2>📼 Oggetti Iconici</h2>
-<p>Walkman, Polaroid, vinili, console e oggetti che hanno segnato un’epoca.</p>
-</div>
-
-<div class="card">
-<h2>🎮 Cultura Retro</h2>
-<p>La nostalgia non è solo ricordo: è stile di vita.</p>
-</div>
-
-</div>
-
-</div>
-
-<footer>
-© 2026 Retro Tech Life | Lifestyle Retrò
-</footer>
+    <footer>
+        RT-OS v1.0 - Connessione sicura (tentativo in corso...)
+    </footer>
 
 </body>
 </html>
