@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style | Retro Tech Life</title>
+  <meta name="description" content="Style by Retro Tech Life. Atmosfere, estetica, dettagli e visioni tra nostalgia, eleganza e presente." />
+  <meta name="keywords" content="retro tech life, style, aesthetics, design, digital products, nostalgia" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Style | Retro Tech Life" />
+  <meta property="og:description" content="Style by Retro Tech Life. Atmosfere, estetica, dettagli e visioni tra nostalgia, eleganza e presente." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Style | Retro Tech Life" />
+  <meta name="twitter:description" content="Style by Retro Tech Life. Atmosfere, estetica, dettagli e visioni tra nostalgia, eleganza e presente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --bg-soft: #151313;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f0e7d8;
+      --muted: #cbbda7;
+      --faint: #9a8d7b;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e0c28b;
+      --button-text: #12100d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, rgba(202,162,94,0.08), transparent 30%),
+        linear-gradient(180deg, #090808 0%, #111010 45%, #0d0c0c 100%);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(13, 12, 12, 0.82);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 78px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: var(--gold-soft);
+    }
+
+    .hero {
+      padding: 110px 0 82px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold-soft);
+      border: 1px solid var(--line);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 22px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    h1, h2, h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 8vw, 6rem);
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.9rem;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 18px;
+    }
+
+    .sublead {
+      color: var(--faint);
+      max-width: 760px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-head {
+      margin-bottom: 34px;
+    }
+
+    .section-kicker {
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      margin-bottom: 10px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: var(--panel-strong);
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .quote-box {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)),
+        linear-gradient(135deg, rgba(202,162,94,0.12), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow);
+    }
+
+    .quote-box .quote {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .quote-box .quote-note {
+      color: var(--muted);
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--button-text);
+      background: var(--gold);
+      border-radius: 999px;
+      padding: 6px 11px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      color: var(--gold-soft);
+      background: transparent;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.04);
+      transform: translateY(-2px);
+    }
+
+    .article-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--gold-soft);
+    }
+
+    .final-box {
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 48px 34px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(202,162,94,0.12), transparent 40%),
+        rgba(255,255,255,0.03);
+      box-shadow: var(--shadow);
+    }
+
+    .final-box p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 14px auto 0;
+    }
+
+    footer {
+      padding: 36px 0 50px;
+      color: var(--faint);
+      border-top: 1px solid var(--line);
+      margin-top: 40px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-brand {
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+    }
+
+    @media (max-width: 900px) {
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 84px 0 64px;
+      }
+
+      .card,
+      .quote-box,
+      .final-box {
+        padding: 22px;
+      }
+
+      .btn-row {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="/" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/#shop">Shop</a>
+        <a href="/#journal">Blog</a>
+        <a href="/style/" class="active">Style</a>
+        <a href="/#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Style</div>
+        <h1>Eleganza, memoria, luce bassa.</h1>
+        <p class="lead">
+          Questa pagina raccoglie il lato più intimo di Retro Tech Life:
+          atmosfere, dettagli, oggetti, suggestioni e piccole visioni che continuano a restare anche quando il tempo cambia tutto.
+        </p>
+        <p class="sublead">
+          Non è solo una questione di gusto. È un modo di guardare il presente con una sensibilità diversa:
+          più lenta, più attenta, più vera.
+        </p>
+
+        <div class="btn-row">
+          <a href="/#shop" class="btn btn-primary">Scopri i prodotti</a>
+          <a href="/#journal" class="btn btn-secondary">Leggi il blog</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2">
+        <div class="quote-box">
+          <div class="quote">“Lo stile non ha fretta. Rimane.”</div>
+          <div class="quote-note">
+            Tra malinconia e bellezza, certe cose non chiedono attenzione:
+            la meritano in silenzio.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-kicker">Una visione</div>
+          <h2>Il retro non è indietro</h2>
+          <p>
+            Per Retro Tech Life, il passato non è una fuga. È una materia delicata da riportare nel presente:
+            un colore, una carta consumata, una stanza quieta, un dettaglio che sembra lontano e invece ci riguarda ancora.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Elementi</div>
+          <h2>Ciò che definisce l’atmosfera</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="label">Texture</div>
+            <h3>Superfici con memoria</h3>
+            <p>
+              Legno, carta, metallo, stoffe, segni del tempo.
+              Tutto ciò che porta una traccia rende lo spazio più umano e meno anonimo.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="label">Luce</div>
+            <h3>Toni caldi e ombre leggere</h3>
+            <p>
+              Non una luce che invade, ma una luce che accompagna.
+              Più soffusa, più dorata, più capace di lasciare respirare le cose.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="label">Oggetti</div>
+            <h3>Presenze piccole ma vere</h3>
+            <p>
+              Una radio, un libro, una tazza, un orologio, una fotografia.
+              Gli oggetti non arredano soltanto: raccontano.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Ritmo</div>
+          <h2>Uno stile che non alza la voce</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Più carattere, meno rumore</h3>
+            <p>
+              Lo stile che cerco qui non è appariscente.
+              È fatto di equilibrio, assenza di fretta, colori che non stancano e dettagli che si scoprono piano.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Una malinconia gentile</h3>
+            <p>
+              Non tristezza, ma profondità.
+              Quel velo sottile che rende le cose più eleganti, più intime, più difficili da dimenticare.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Appunti</div>
+          <h2>Piccole letture da questa stanza interiore</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Oggetti che sembrano aspettarci</h3>
+            <p>
+              Ci sono cose che non smettono mai di parlarci:
+              basta ritrovarle nel momento giusto.
+            </p>
+            <a href="/post/" class="article-link">Apri i post →</a>
+          </article>
+
+          <article class="card">
+            <h3>La bellezza delle stanze quiete</h3>
+            <p>
+              Un invito a guardare gli spazi non per riempirli,
+              ma per ascoltarli meglio.
+            </p>
+            <a href="/#journal" class="article-link">Vai al blog →</a>
+          </article>
+
+          <article class="card">
+            <h3>Il tempo come stile</h3>
+            <p>
+              Quando una cosa è fatta con cura, il tempo non la consuma:
+              la completa.
+            </p>
+            <a href="/#about" class="article-link">Leggi di più →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-box">
+          <div class="section-kicker">Retro Tech Life</div>
+          <h2>Una pagina da abitare lentamente</h2>
+          <p>
+            Style è il luogo dove l’immaginario del progetto si raccoglie:
+            più sottile del blog, più atmosferico dello shop, più vicino a un sentimento che a una categoria.
+          </p>
+          <div class="btn-row" style="justify-content:center;">
+            <a href="/" class="btn btn-primary">Torna alla home</a>
+            <a href="mailto:mail.tetro.tech.life@gmail.com" class="btn btn-secondary">Scrivimi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Retro Tech Life</div>
+        <div>Oggi è già domani.</div>
+      </div>
+
+      <div style="text-align:right;">
+        <div><a href="mailto:mail.tetro.tech.life@gmail.com">mail.tetro.tech.life@gmail.com</a></div>
+        <div style="margin-top:8px;">
+          <a href="/#shop">Shop</a> ·
+          <a href="/#about">About</a> ·
+          <a href="/payments/">Payments</a> ·
+          <a href="/#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
