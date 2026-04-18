@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Evolution of Digital Files | Retro Tech Life Journal</title>
+  <meta name="description" content="From floppy disks to the cloud: how our relationship with digital files has changed and why we should bring value back to our local archives." />
+  <meta name="keywords" content="digital files, retro tech, cloud, archives, digital evolution, digital ownership" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="The Evolution of Digital Files | Retro Tech Life" />
+  <meta property="og:description" content="From floppy disks to the cloud: how our relationship with digital files has changed." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Evolution of Digital Files" />
+  <meta name="twitter:description" content="From floppy disks to the cloud: how our relationship with digital files has changed." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 1220px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.8;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: radial-gradient(circle at top, rgba(202,162,94,0.10), transparent 28%), linear-gradient(180deg, #090808 0%, #111010 45%, #0d0c0c 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(92%, var(--max)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+    .topbar-inner { min-height: 78px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .brand { font-family: "Cormorant Garamond", serif; font-size: 2rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-soft); white-space: nowrap; }
+    .nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .nav a { color: var(--muted); font-size: 0.95rem; transition: 0.25s ease; }
+    .nav a:hover { color: var(--gold-soft); }
+    main { flex: 1; }
+    
+    .article-header { padding: 112px 0 60px; text-align: center; max-width: 800px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-block; color: var(--gold-soft); border: 1px solid var(--line);
+      border-radius: 999px; padding: 8px 14px; font-size: 0.8rem; text-transform: uppercase;
+      letter-spacing: 0.18em; margin-bottom: 22px; background: rgba(255,255,255,0.02);
+    }
+    h1 { font-family: "Cormorant Garamond", serif; font-weight: 600; line-height: 1.1; font-size: clamp(2.8rem, 5vw, 4.2rem); margin-bottom: 20px; }
+    .article-meta { font-size: 0.95rem; color: var(--faint); margin-top: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+    
+    .article-content { max-width: 720px; margin: 0 auto; padding: 0 0 100px; font-size: 1.12rem; color: var(--muted); }
+    .article-content h2 { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; color: var(--gold-soft); margin: 48px 0 20px; line-height: 1.2; }
+    .article-content p { margin-bottom: 24px; }
+    .article-content blockquote {
+      border-left: 2px solid var(--gold); padding-left: 24px; margin: 40px 0;
+      font-family: "Cormorant Garamond", serif; font-size: 1.8rem; line-height: 1.3;
+      color: var(--text); font-style: italic;
+    }
+    .separator { width: 60px; height: 1px; background: var(--line); margin: 60px auto; }
+    
+    footer { padding: 36px 0 52px; border-top: 1px solid var(--line); color: var(--faint); margin-top: auto; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .footer-brand { font-family: "Cormorant Garamond", serif; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-soft); }
+    
+    @media (max-width: 640px) {
+      .topbar-inner { padding: 14px 0; }
+      .brand { font-size: 1.45rem; }
+      .nav { gap: 14px; }
+      .article-content { padding: 0 20px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="../../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../../#home">Home</a>
+        <a href="../../#shop">Shop</a>
+        <a href="../../style/">Style</a>
+        <a href="../../#journal">Journal</a>
+        <a href="../../#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-header">
+      <div class="container">
+        <div class="eyebrow">Journal</div>
+        <h1>The Evolution of Digital Files: From Floppy to Cloud</h1>
+        <div class="article-meta">Published · Thoughts · Reading time: 3 min</div>
+      </div>
+    </div>
+
+    <article class="article-content container">
+      <p>
+        There was a time when a digital file had physical weight. We held it in our hands in the form of a floppy disk, carefully placed it in a plastic case, and listened to its mechanical hum as the drive tried to extract information from it. That hum was the reassuring sound of memory coming back to the surface.
+      </p>
+
+      <h2>The Illusion of the Cloud</h2>
+      <p>
+        Today we live in the age of invisible abundance. Our files no longer reside on media we can touch; they float on distant servers. The Cloud has solved the space problem, but it has created a more subtle one: the loss of attachment to our own data.
+      </p>
+      <p>
+        When everything is available everywhere, nothing has the same value. We take thousands of photos we will never look at, save dozens of PDFs we won't read, and accumulate gigabytes of background noise. We have traded real ownership for unlimited access, turning our files from precious personal archives into a continuous, disposable stream.
+      </p>
+
+      <blockquote>
+        "The real problem with digital is not the fragility of the medium, but our inability to value what does not occupy physical space."
+      </blockquote>
+
+      <h2>Curating Your Digital Space</h2>
+      <p>
+        At <strong>Retro Tech Life</strong>, we believe that the approach to digital should recover the intentionality of the past. Going back to curating your folders the way you would curate a physical library. Choosing lasting formats, giving clear names to documents, and eliminating the superfluous to let the essential breathe.
+      </p>
+      <p>
+        It is not about nostalgia for its own sake, but mental hygiene. A clean desktop, a well-thought-out folder hierarchy, and a local storage system (or a rigorously managed cloud) reduce stress and increase focus. The digital file returns to being an artifact, a product of our work or a memory of our life, to be treated with the same respect as a physical object.
+      </p>
+
+      <h2>The Return to the Essential</h2>
+      <p>
+        Perhaps the future of technology does not lie in continually adding more space, but in learning to use less, with more purpose. Rediscovering the beauty of a perfectly organized folder, the satisfaction of a proper backup, the pleasure of a distraction-free interface.
+      </p>
+      <p>
+        Because, ultimately, the evolution of digital files is not just a story of megabytes and transfer speeds. It is the story of how we choose to preserve the things that truly matter.
+      </p>
+
+      <div class="separator"></div>
+      <p style="text-align: center; font-size: 0.95rem; color: var(--faint);">
+        <a href="../../#journal" style="color: var(--gold-soft); border-bottom: 1px solid var(--gold-soft); padding-bottom: 2px;">← Back to Journal</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Retro Tech Life</div>
+        <div>The future has memory.</div>
+      </div>
+      <div style="text-align:right;">
+        <div><a href="mailto:mail.tetro.tech.life@gmail.com">mail.tetro.tech.life@gmail.com</a></div>
+        <div style="margin-top:8px;">
+          <a href="../../#shop">Shop</a> ·
+          <a href="../../style/">Style</a> ·
+          <a href="../../#journal">Journal</a> ·
+          <a href="../../payments/">Payments</a> ·
+          <a href="../../#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
