@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omnichannel AI Content Dashboard | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/b4w3gw4yf4xq6w7kxonn4cc39g8r" alt="Omnichannel AI Content Dashboard" class="product-header-img">
+      
+      
+      <h1>Omnichannel AI Content Dashboard: Moltiplica i tuoi contenuti in una frazione del tempo</h1>
+      <p>Sei un content creator, un podcaster o un'agenzia? Allora sai benissimo che registrare un video lungo o un podcast è solo il 20% del lavoro. Il vero ostacolo è la distribuzione: prendere quel contenuto e trasformarlo in reel, post per LinkedIn, thread per X e newsletter, senza dover passare ore intere a riscrivere e tagliare.</p>
+      <p>L'<strong>Omnichannel AI Content Dashboard</strong> è la soluzione definitiva per smettere di rincorrere le scadenze editoriali e iniziare a dominare ogni piattaforma.</p>
+      <h3>Cos'è e perché è indispensabile?</h3>
+      <p>Creare contenuti da zero per ogni singolo social network è insostenibile. Questo sistema ti permette di prendere <em>un singolo pezzo di contenuto lungo</em> (come un video YouTube o un episodio di un podcast) e trasformarlo in molteplici asset pronti per i social, sfruttando in modo strategico e ordinato l'Intelligenza Artificiale.</p>
+      <p>Non si tratta di semplici prompt disordinati, ma di un flusso di lavoro (workflow) professionale e testato, costruito per farti risparmiare decine di ore ogni settimana e per garantire che la tua voce rimanga coerente su tutti i canali.</p>
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Massima Efficienza:</strong> Trasforma 1 contenuto lungo in 15+ post social in meno di un'ora.</li>
+        <li><strong>Flusso di Lavoro Standardizzato:</strong> Elimina il blocco dello scrittore e la confusione grazie alle SOP (Standard Operating Procedures) incluse.</li>
+        <li><strong>Pronto all'uso su Notion:</strong> Non dovrai costruire nulla da zero. Ti basta importare i file e iniziare a lavorare in un ambiente già strutturato e ottimizzato.</li>
+        <li><strong>Scalabilità per Agenzie:</strong> Perfetto non solo per i singoli creator, ma anche per i team che gestiscono i contenuti di più clienti.</li>
+      </ul>
+      <h3>Cosa include l'Edizione Base?</h3>
+      <p>Un kit completo pronto per l'importazione: AI Content Dashboard Blueprint, SOP Repurposing System, Libreria di Prompt AI, Guida al Setup su Notion, e File CSV preimpostati.</p>
+      <h3>Fai il salto di livello con il "Complete Bundle"</h3>
+      <p>Se vuoi eliminare anche il lavoro manuale di copia-incolla, il <em>Complete Bundle</em> include l'infrastruttura per automatizzare l'intero processo con Zapier Automation Setups, Advanced Workflow Guide e Automation Field Map.</p>
+
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Pronto per l'acquisto?</h3>
+        <p style="margin-bottom: 30px;">Scegli la versione che preferisci su Gumroad.</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/qeimj" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

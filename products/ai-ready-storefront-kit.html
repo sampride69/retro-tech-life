@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Ready Storefront Kit | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/t2veph038puwcld9l54r0wr0uh4s" alt="AI-Ready Storefront Kit" class="product-header-img">
+      
+      <h1>AI-Ready Storefront Kit: Rendi le tue offerte visibili all'Intelligenza Artificiale</h1>
+      
+      <p>Il tuo business potrebbe essere chiarissimo per gli esseri umani... ma completamente invisibile all'Intelligenza Artificiale.</p>
+      
+      <p>Sempre più acquirenti stanno utilizzando assistenti AI (come ChatGPT, Perplexity o i nuovi agenti di shopping) per ricercare, comparare e selezionare prodotti e servizi. In questo nuovo ecosistema, avere offerte vaghe e pagine prodotto deboli non è più solo una svista: è un enorme svantaggio competitivo.</p>
+
+      <p>L'<strong>AI-Ready Storefront Kit</strong> è il kit pratico per piccole imprese che vogliono correggere questo problema. Ti aiuta a fare una revisione completa (audit), a riscrivere e a strutturare le tue pagine affinché l'Intelligenza Artificiale possa comprendere, confrontare e, soprattutto, <em>raccomandare</em> ciò che vendi.</p>
+
+      <h3>Perché è indispensabile ora?</h3>
+      <p>La maggior parte degli store online è stata costruita solo per la navigazione umana. Se la tua offerta è incompleta, difficile da paragonare con altre, o priva di un contesto strutturato, l'AI semplicemente non la capirà. E se l'AI non la capisce, le tue chance di essere raccomandato in una ricerca crollano a zero.</p>
+
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Analisi Spietata:</strong> Identifica rapidamente i punti in cui la tua offerta attuale risulta vaga o debole per i sistemi AI.</li>
+        <li><strong>Testi a prova di macchina:</strong> Aggiungi chiari segnali di acquisto (buying signals), segnali di fiducia e logiche di comparazione.</li>
+        <li><strong>Conversioni Migliorate:</strong> Trasforma testi sparsi e confusi in una vetrina (storefront) pronta per far prendere decisioni ai tuoi clienti (e alle macchine che li aiutano).</li>
+      </ul>
+
+      <h3>Cosa otterrai all'interno?</h3>
+      <p>Non si tratta di un banale pacchetto di prompt, ma di un vero e proprio sistema pratico per migliorare la tua visibilità, che include:</p>
+      <ul>
+        <li>Guida Principale</li>
+        <li>Framework per l'Audit della visibilità AI</li>
+        <li>Libreria di Prompt strutturati</li>
+        <li>Scorecard per l'Audit</li>
+        <li>Checklist di Implementazione</li>
+        <li>Esempi pratici "Prima e Dopo"</li>
+        <li>Guida al Posizionamento del prodotto</li>
+        <li>Asset di vendita pronti per Gumroad</li>
+      </ul>
+
+      <h3>A chi è rivolto?</h3>
+      <p>Perfetto per piccoli brand di ecommerce, agenzie, consulenti, attività di servizi, venditori di prodotti digitali e founder singoli (solo founder).<br>
+      <em>(Non è invece adatto a team Enterprise che necessitano di integrazioni tecniche complesse o a chi non ha ancora un'offerta chiara da vendere).</em></p>
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Pronto per l'era dell'AI?</h3>
+        <p style="margin-bottom: 30px;">Acquista il kit in promozione lancio (Early buyers ricevono anche un Bonus Gift).</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/AI-ReadyStorefrontKit" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

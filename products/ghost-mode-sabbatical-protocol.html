@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost-Mode Sabbatical Protocol | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/rktiyc5tfrtz62hh8u92w7blr3fe" alt="Ghost-Mode Sabbatical Protocol" class="product-header-img">
+      
+      
+      <h1>Ghost-Mode Sabbatical Protocol: Il tuo Reset Digitale di 30 Giorni</h1>
+      <p>Senti di essere a un passo dal <em>burnout</em> digitale? Sei un professionista del web, un freelancer o un manager che sogna di staccare completamente per 30 giorni, ma il terrore di vedere il proprio business crollare te lo impedisce?</p>
+      <p>La verità è che nel mondo moderno spegnere il telefono non basta: se non prepari il terreno, passerai la vacanza a preoccuparti delle email accumulate o dei clienti in attesa.</p>
+      <p>Il <strong>Ghost-Mode Sabbatical Protocol</strong> è il sistema definitivo per premere il tasto "Pausa" senza distruggere ciò che hai costruito. Attraverso un piano meticolosamente strutturato e sistemi automatizzati, questo protocollo garantisce che la tua vita digitale (e il tuo business) continuino a funzionare senza intoppi mentre tu ti concentri sull'unica cosa che conta: ricaricare la mente.</p>
+      <h3>Cos'è e perché è indispensabile?</h3>
+      <p>Il protocollo è il tuo "pulsante di reset digitale". È stato progettato per chi ha la necessità vitale di recuperare energie, ma non può permettersi di perdere il controllo operativo. Ti permette di assentarti in totale "Ghost-Mode", delegando e automatizzando tutto il necessario affinché, al tuo ritorno, non ci sia nessun incendio da spegnere.</p>
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Libertà senza sensi di colpa:</strong> Prenditi 30 giorni di stacco totale con la certezza matematica che il tuo ecosistema aziendale è al sicuro.</li>
+        <li><strong>Transizione perfetta:</strong> Impara come uscire di scena senza traumi per te e per i tuoi clienti, grazie a un piano di avvicinamento guidato.</li>
+        <li><strong>Rientro Zero-Stress:</strong> La vera paura delle ferie è il ritorno. Con questo sistema, il tuo rientro sarà fluido e gestito dall'intelligenza artificiale, senza l'ansia di mille email non lette.</li>
+      </ul>
+      <h3>Cosa include il Protocollo?</h3>
+      <p>Riceverai immediatamente l'accesso a tutti gli strumenti operativi:</p>
+      <ul>
+        <li><strong>60-Day Planner:</strong> La tua mappa esatta per preparare il terreno in vista del reset digitale. Non si spegne tutto da un giorno all'altro, si pianifica l'uscita.</li>
+        <li><strong>Delegation OS:</strong> Sistemi operativi pronti all'uso per permettere al tuo team (o ai tuoi collaboratori) di gestire in autonomia le urgenze senza mai doverti contattare.</li>
+        <li><strong>AI Re-Entry System:</strong> Un potente strumento basato sull'Intelligenza Artificiale che, al tuo rientro, smaltirà rapidamente email, aggiornamenti e trend accumulati durante la pausa.</li>
+        <li><strong>Bonus Pack:</strong> Strumenti e template extra per potenziare il tuo benessere digitale quotidiano, non solo in vacanza.</li>
+      </ul>
+
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Pronto per l'acquisto?</h3>
+        <p style="margin-bottom: 30px;">Scegli la versione che preferisci su Gumroad.</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/Ghost-Mode" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

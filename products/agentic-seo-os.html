@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic SEO OS | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/qi52ffy61jmyfg47685rgox1xgn0" alt="Agentic SEO OS" class="product-header-img">
+      
+      
+      <h1>Agentic SEO OS™: Struttura i tuoi dati per dominare il mercato AI</h1>
+      <p>La maggior parte dei brand ha un problema enorme che non sa ancora di avere: <strong>i loro siti web sono ottimizzati solo per gli esseri umani</strong>.</p>
+      <p>Strumenti come ChatGPT, Perplexity o i nuovi agenti di shopping basati su AI non vengono sedotti da un bel layout grafico. Hanno bisogno di informazioni strutturate, specifiche e affidabili per capire cos'è un prodotto, a chi serve, come si paragona alle alternative e se il tuo brand è una scelta commerciale sicura. <strong>Se il tuo catalogo è confuso, il tuo brand diventerà invisibile.</strong></p>
+      <h3>Cos'è e perché è indispensabile?</h3>
+      <p><strong>Agentic SEO OS™</strong> non è la solita guida generica alla SEO tradizionale. È un <strong>sistema operativo e digitale professionale</strong> ideato per aiutarti a ristrutturare il tuo catalogo per renderlo "AI-ready" (pronto per essere scoperto dall'Intelligenza Artificiale).</p>
+      <p>Ti fornisce un framework estremamente pratico per trasformare elementi come: descrizioni dei prodotti, specifiche tecniche, logiche di prezzo, politiche di reso e segnali di fiducia in asset cristallini e <strong>leggibili dalle macchine (machine-readable)</strong>.</p>
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Visibilità nel nuovo web:</strong> Fai in modo che i motori di intelligenza artificiale raccomandino i tuoi prodotti rispetto a quelli della concorrenza.</li>
+        <li><strong>Dalla teoria alla pratica:</strong> Niente concetti astratti. Ti offre un meccanismo concreto per ristrutturare i tuoi dati affinché le AI possano valutarli con sicurezza.</li>
+        <li><strong>La Promessa Centrale:</strong> In soli 7 giorni puoi ristrutturare la logica di base del tuo catalogo, rendendolo più chiaro, più facilmente paragonabile e perfettamente leggibile dall'AI.</li>
+      </ul>
+      <h3>Cosa otterrai all'interno del sistema?</h3>
+      <p>A seconda della versione scelta, avrai accesso a: documenti strategici di framework, linee guida pratiche per l'implementazione, sistemi di prompt avanzati, protocolli per testare la risposta dell'AI (AI testing), e logiche strutturate per migliorare radicalmente la tua visibilità tecnica.</p>
+
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Pronto per l'acquisto?</h3>
+        <p style="margin-bottom: 30px;">Scegli la versione che preferisci su Gumroad.</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/AgenticSEOOS" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

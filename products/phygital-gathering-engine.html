@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phygital Gathering Engine | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/srhixym4wsfklq2jmhsla0n4rv6l" alt="Phygital Gathering Engine" class="product-header-img">
+      
+      <h1>Phygital Gathering Engine: Il Toolkit definitivo per Eventi Locali</h1>
+      
+      <p>Organizzare un evento dal vivo o un raduno locale sembra sempre un'idea fantastica e piena di entusiasmo... finché non devi scontrarti con la realtà.</p>
+      
+      <p>All'improvviso ti trovi assalito da dubbi: <em>Quanto dovrei far pagare il biglietto? Quante persone servono per non andare in perdita? Dovrei cercare degli sponsor? E se sì, cosa devo scrivere loro? Come pianifico la logistica senza dimenticare dettagli fondamentali?</em></p>
+
+      <p>Il <strong>Phygital Gathering Engine</strong> è nato esattamente per rispondere a queste domande. È il toolkit progettato per farti passare dalla fase "Ho una bella idea per un evento" a "Ho un piano realistico, un budget, il materiale per contattare gli sponsor e un sistema ripetibile".</p>
+
+      <h3>Perché è indispensabile?</h3>
+      <p>Che tu stia organizzando un meetup per la tua community, un workshop, una cena di networking o l'attivazione di un brand locale, l'entusiasmo non basta a coprire i costi. Ti servono strumenti pratici per prendere decisioni intelligenti <em>prima</em> di spendere soldi e per operare con massima professionalità una volta decisa la data.</p>
+      <p>Qui non troverai consigli teorici o frasi motivazionali generiche: troverai solo file operativi, calcolatori e fogli di lavoro pronti all'uso immediato.</p>
+
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Calcolo della Sostenibilità:</strong> Scopri immediatamente se il tuo evento è finanziariamente solido (break-even) e imposta prezzi dei biglietti sensati.</li>
+        <li><strong>Strategia di Sponsorizzazione:</strong> Capisci di quanto supporto hai bisogno, crea offerte interessanti per i partner locali e usa script testati per contattarli senza sembrare un dilettante.</li>
+        <li><strong>Logistica Senza Sorprese:</strong> Pianifica ogni fase, dalla timeline alla "run-of-show", evitando l'improvvisazione.</li>
+        <li><strong>Formato Ripetibile:</strong> Trasforma lo sforzo di un singolo evento in un format scalabile che potrai ripetere mese dopo mese.</li>
+      </ul>
+
+      <h3>Cosa include il Toolkit?</h3>
+      <p>A seconda della versione scelta, avrai accesso a un vero e proprio ecosistema gestionale:</p>
+      <ul>
+        <li>Calcolatori di Break-even, Budget e Prezzi dei biglietti.</li>
+        <li>Checklist logistiche e Template per la pianificazione.</li>
+        <li>Script per il contatto sponsor (Email/DM) e Tracker delle partnership.</li>
+        <li>Template per il Pitch Deck di presentazione dell'evento.</li>
+        <li>Dashboard per i KPI e Template per il Report Post-Evento.</li>
+        <li><em>Bonus: Calcolatori avanzati e strumenti extra per l'outreach.</em></li>
+      </ul>
+
+      <h3>A chi si rivolge?</h3>
+      <p>È lo strumento perfetto per creator, freelance, manager di community e spazi di coworking, brand locali e founder che vogliono testare esperienze offline senza incorrere in un "caos finanziario".</p>
+      
+      <p><strong>Cosa lo rende diverso?</strong> La maggior parte dei consigli online ti dice semplicemente "buttati e fallo". Questo toolkit fa il contrario: si concentra sulla parte che spaventa di più (denaro, struttura e sponsorizzazioni), permettendoti di lanciare il tuo evento locale con la sicurezza di un professionista.</p>
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Inizia a organizzare il tuo evento!</h3>
+        <p style="margin-bottom: 30px;">Scegli la versione che preferisci su Gumroad.</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/PhygitalGatheringEngine" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

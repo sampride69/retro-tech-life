@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPP Readiness System | Retro Tech Life</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0c0c;
+      --panel: rgba(255,255,255,0.04);
+      --panel-strong: rgba(255,255,255,0.06);
+      --text: #f3eadb;
+      --muted: #cfbea4;
+      --faint: #9d907d;
+      --line: rgba(214, 181, 112, 0.25);
+      --gold: #caa25e;
+      --gold-soft: #e6c88e;
+      --button-text: #15120d;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 800px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      background: #0d0c0c;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 12, 12, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar-inner {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: min(92%, 1220px);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold-soft);
+    }
+    
+    .content-section {
+        padding: 80px 0;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      color: var(--gold-soft);
+    }
+
+    h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      color: var(--gold-soft);
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+
+    p, ul {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 500;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--button-text);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .product-header-img {
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        margin-bottom: 40px;
+    }
+
+    .cta-box {
+        margin-top: 60px;
+        padding: 40px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 0;
+      }
+      .brand {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="brand">Retro Tech Life</a>
+      <nav class="nav">
+        <a href="../#home">Home</a>
+        <a href="../#shop">Shop</a>
+        <a href="../#journal">Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
+      
+      <img src="https://public-files.gumroad.com/vnfu6ge2o9ge9znjeb3kntnk86qf" alt="DPP Readiness System" class="product-header-img">
+      
+      
+      <h1>DPP Readiness System: Prepara il tuo Brand all'era del Passaporto Digitale</h1>
+      <p>Il mercato europeo sta cambiando e la trasparenza non è più solo una parola di marketing: sta diventando un requisito. Con l'avvento imminente del <em>Digital Product Passport (DPP)</em>, la vera sfida per i brand non è solo produrre bene, ma saper tracciare e documentare come lo si fa.</p>
+      <p>Sei circondato da confusione legale, fogli Excel disordinati e comunicazioni frammentate con i fornitori? Il <strong>DPP Readiness System</strong> è la bussola operativa di cui hai bisogno per mettere in ordine i tuoi dati prima che diventi un'emergenza.</p>
+      <h3>Cos'è e perché è indispensabile?</h3>
+      <p>Questo non è un noioso manuale legale. È un <strong>kit di implementazione pratico</strong> progettato specificamente per piccoli brand di moda, artigiani e business e-commerce D2C. Il suo scopo è aiutarti a creare un flusso di lavoro pulito e strutturato per raccogliere, organizzare e documentare i dati dei tuoi prodotti e della tua filiera.</p>
+      <p>Invece di partire da zero e perderti nel "caos dei fornitori", avrai un sistema operativo pronto all'uso (adattabile facilmente a Notion o Airtable) che ti permetterà di trasformare l'obbligo della tracciabilità in un vero e proprio <strong>asset di valore per il tuo brand</strong>.</p>
+      <h3>I Benefici Principali</h3>
+      <ul>
+        <li><strong>Tutto in un unico posto:</strong> Dì addio ai dati sparsi. Centralizza le informazioni sui prodotti e ottimizza il flusso di comunicazione con i fornitori.</li>
+        <li><strong>Mappa la tua Supply Chain:</strong> Ottieni una visione chiara e mappata degli elementi essenziali della tua filiera produttiva.</li>
+        <li><strong>Crea il tuo "DPP Pilota":</strong> Struttura un primo modello funzionante di Passaporto Digitale del Prodotto per essere pronto per le future normative.</li>
+        <li><strong>Trasparenza come Marketing:</strong> Migliora la documentazione interna e trasforma la tracciabilità in una storia potente da raccontare ai tuoi clienti.</li>
+      </ul>
+      <h3>Quale versione scegliere?</h3>
+      <p>Scegli il livello di profondità più adatto alla fase attuale del tuo business:</p>
+      <ol>
+        <li><strong>Starter:</strong> L'essenziale per un primo setup rapido e pulito.</li>
+        <li><strong>Pro:</strong> Un sistema interno molto più completo e dettagliato.</li>
+        <li><strong>Guided Implementation:</strong> Una struttura guidata per chi vuole un supporto più strutturato nell'implementazione.</li>
+      </ol>
+
+
+      <div class="cta-box">
+        <h3 style="margin-top: 0;">Pronto per l'acquisto?</h3>
+        <p style="margin-bottom: 30px;">Scegli la versione che preferisci su Gumroad.</p>
+        <a class="btn btn-primary" href="https://retotechlife.gumroad.com/l/dpp-readiness-system" target="_blank" rel="noopener noreferrer">Acquista Ora su Gumroad</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
