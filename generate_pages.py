@@ -7,8 +7,18 @@ TEMPLATE = """<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} | Retro Tech Life</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="{seo_description}" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="{title} | Retro Tech Life" />
+  <meta property="og:description" content="{seo_description}" />
+  <meta property="og:image" content="{og_image}" />
+  <meta property="og:url" content="https://retro-tech-life.shop/products/{file}" />
+  <meta property="og:type" content="product" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{title} | Retro Tech Life" />
+  <meta name="twitter:description" content="{seo_description}" />
+  <meta name="twitter:image" content="{og_image}" />
+  <link rel="canonical" href="https://retro-tech-life.shop/products/{file}" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -208,7 +218,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="container">
       <a href="../#shop" style="color: var(--gold); margin-bottom: 20px; display: inline-block;">&larr; Back to Shop</a>
       
-      {img_html}
+      <img src="{og_image}" alt="{title}" class="product-header-img" loading="lazy">
       
       {content_html}
 
@@ -758,103 +768,63 @@ products = [
 """
     },
     {
-        "file": "ai-receptionist-agency-playbook.html",
-        "title": "AI-Receptionist Agency Playbook",
-        "img": "https://public-files.gumroad.com/upm06nxg1pous5otq2jhcvvq0m60",
-        "link": "https://retotechlife.gumroad.com/l/AIReceptionistAgencyPlaybook",
-        "html": '''
-      <h1>AI-Receptionist Agency Playbook</h1>
-      <p>A complete step-by-step playbook for building and selling AI receptionist services to local businesses.</p>
-      <p>Every local business has the same invisible problem:<br>The phone rings while they are busy.</p>
-      <p>A dentist is with a patient.<br>A plumber is on a job.<br>A beauty salon is serving a client.<br>A restaurant is in the middle of lunch service.<br>An auto repair shop is dealing with a customer at the counter.</p>
-      <p>And in that moment, a potential customer may simply hang up and call someone else.</p>
-      <p>That missed call could have been an appointment, a quote request, a booking, a new patient, or a repeat customer.</p>
-      <p>This is exactly where the AI receptionist opportunity begins.</p>
-      <p>AI-Receptionist Agency Playbook is a complete operational toolkit that shows you how to build and sell AI receptionist services to local businesses — without starting from a blank page.</p>
-      <p>This is not a generic AI prompt pack.</p>
-      <p>It is a practical agency playbook designed to help you understand the opportunity, package the service, contact potential clients, create a simple demo, onboard businesses, price your offer, and launch your first local AI receptionist service.</p>
-      <p>Instead of wondering what to say, what to offer, how to explain the service, how to structure the bot, or how much to charge, you get a ready-to-use system you can adapt and put into action.</p>
-'''
+        "file": "saas-spend-autopsy.html",
+        "title": "SaaS Spend Autopsy",
+        "img": "https://public-files.gumroad.com/lj5zqf5ia46v1ixzzcrfj3cebjgh",
+        "link": "https://retotechlife.gumroad.com/l/SaaSSpendAutopsy",
+        "html": """
+      <h1>SaaS Spend Autopsy</h1>
+      <p>Find forgotten SaaS subscriptions, organize your software spend, and build a clear cancellation, downgrade, or renegotiation plan.</p>
+      <p>Most small businesses do not know how much they are really spending on software.</p>
+      <ul>
+        <li>Receipts are buried in inboxes.</li>
+        <li>Renewals happen quietly.</li>
+        <li>Duplicate tools pile up.</li>
+        <li>Nobody owns the cleanup.</li>
+      </ul>
+      <p>SaaS Spend Autopsy is a practical no-code toolkit that helps freelancers, agencies, founders, and small teams find forgotten, duplicated, or underused SaaS subscriptions and turn them into a clear cancellation, downgrade, or renegotiation plan.</p>
+      <h3>Inside the toolkit:</h3>
+      <ul>
+        <li>START HERE guide</li>
+        <li>SaaS spend workbook</li>
+        <li>Implementation guide</li>
+        <li>AI prompt pack</li>
+        <li>Email templates</li>
+        <li>Gmail / Outlook search query pack</li>
+        <li>Make / Zapier automation blueprint</li>
+        <li>Demo data</li>
+        <li>Consultant resale kit</li>
+        <li>Privacy and safety notes</li>
+      </ul>
+      <h3>Use it to:</h3>
+      <ul>
+        <li>Find recurring SaaS charges</li>
+        <li>Organize subscriptions</li>
+        <li>Calculate monthly and annual spend</li>
+        <li>Identify possible waste</li>
+        <li>Detect duplicate tools</li>
+        <li>Prepare cancellation and renegotiation emails</li>
+        <li>Build a repeatable SaaS audit workflow</li>
+      </ul>
+      <p>No coding required. No complicated setup. No need to connect sensitive accounts to get started.</p>
+      <p>Run your first audit manually in about 90 minutes.</p>
+      <h3>Pricing</h3>
+      <p><strong>Launch price: €149</strong><br>Standard price later: €299</p>
+      <p><em>Important: this toolkit does not guarantee savings and does not provide legal, accounting, tax, financial, or GDPR compliance advice. It is designed to help you identify potential SaaS waste and organize your next actions.</em></p>
+"""
     },
-    {
-        "file": "culinaryroots.html",
-        "title": "CulinaryRoots – Family Recipe Memory Kit ITA + ENG",
-        "img": "https://public-files.gumroad.com/hjtno2tb27qg7fr9ij9go3rn9o7y",
-        "link": "https://retotechlife.gumroad.com/l/CulinaryRoots",
-        "html": '''
-      <h1>CulinaryRoots – Family Recipe Memory Kit</h1>
-      <p>A bilingual English + Italian digital kit to preserve family recipes, memories, gestures, and cooking secrets before they disappear.</p>
-      <p>Some family recipes were never written down. They live in someone’s hands, in a grandmother’s memory, in a parent’s instinct.</p>
-      <p>CulinaryRoots is a bilingual digital kit, available in English and Italian, created to help you collect, document, and preserve your own family recipes before they disappear.</p>
-      <p>This kit guides you step by step through the process of recording a recipe from someone you love: the ingredients, approximate quantities, gestures, timing, memories, photos, cooking secrets, and the story behind the dish.</p>
-'''
-    },
-    {
-        "file": "purehome-suite.html",
-        "title": "PureHome Suite",
-        "img": "https://public-files.gumroad.com/zd8iyizosbhep7qhflqog70dd5qb",
-        "link": "https://retotechlife.gumroad.com/l/PureHomeSuite",
-        "html": '''
-      <h1>PureHome Suite</h1>
-      <p>PureHome Suite includes two local-first wellness software editions:</p>
-      <p>PureHome Legacy — Personal Edition is designed for private homes, families and personal use. It helps users organize a guided home wellness journey, track progress, generate printable reports, create symbolic milestone certificates, and keep their data locally on their device.</p>
-      <p>PureSpace Pro — Property Edition is designed for hotels, B&Bs, apartments, offices, condominiums, campsites, hostels, property managers and managed spaces. It helps users manage multiple rooms or properties, run a structured audit journey, generate space wellness reports, create printable certificates, and maintain a local vault of profiles and progress.</p>
-      <p>Both editions include English and Italian support, local vault export/import, printable reports, printable certificates, and no cloud account requirement.</p>
-'''
-    },
-    {
-        "file": "hero-tale-english.html",
-        "title": "Hero-Tale English — Screen-Free Audio Adventures for Kids",
-        "img": "https://public-files.gumroad.com/l664dr31lu8b3gobqyk93mle7odn",
-        "link": "https://retotechlife.gumroad.com/l/HeroTaleEnglish",
-        "html": '''
-      <h1>Hero-Tale English — Screen-Free Audio Adventures for Kids</h1>
-      <p>5 gentle audio stories, calm routines, and printable magic cards to help children face everyday challenges without screens.</p>
-      <p>Hero-Tale English is a screen-free storytelling kit for families with young children. Inside, you’ll find 5 gentle audio adventures where children become the heroes of everyday challenges: fear of the dark, the first day of school, big feelings, sleeping in their own bed, and missing a parent or caregiver.</p>
-'''
-    },
-    {
-        "file": "hero-tale-italiano.html",
-        "title": "Hero-Tale Italiano — Avventure Audio Senza Schermi per Bambini",
-        "img": "https://public-files.gumroad.com/7dx9b0e6hli1klr9yy0ps77hu71v",
-        "link": "https://retotechlife.gumroad.com/l/HeroTaleItaliano",
-        "html": '''
-      <h1>Hero-Tale Italiano — Avventure Audio Senza Schermi per Bambini</h1>
-      <p>5 avventure audio senza schermi per bambini, con mini routine calmanti, carte magiche stampabili, guide per genitori e certificati finali.</p>
-      <p>Hero-Tale Italiano è un kit narrativo senza schermi pensato per famiglie con bambini piccoli. All’interno troverai 5 avventure audio dolci e coinvolgenti, dove il bambino diventa l’eroe di piccole sfide quotidiane.</p>
-'''
-    },
-    {
-        "file": "ai-contract-review.html",
-        "title": "AI Contract Review Starter Kit",
-        "img": "https://public-files.gumroad.com/10pka83g0pmn7mqafs4t3ntbpsna",
-        "link": "https://retotechlife.gumroad.com/l/AIContractReview",
-        "html": '''
-      <h1>AI Contract Review Starter Kit</h1>
-      <p>Prompt, checklist e template per leggere, riassumere e organizzare contratti con l’aiuto dell’AI, mantenendo controllo umano e fonti verificabili.</p>
-      <p>L’AI Contract Review Starter Kit è un pacchetto digitale pensato per aiutarti a organizzare la lettura di contratti, accordi, NDA, documenti commerciali e materiali contrattuali con il supporto dell’AI, senza affidarti ciecamente alle risposte generate.</p>
-'''
-    },
-    {
-        "file": "aegis-pm.html",
-        "title": "Aegis PM — Privacy-First AI Project Management",
-        "img": "https://public-files.gumroad.com/zbgdxxoe90msvewya9y4ao3bydux",
-        "link": "https://retotechlife.gumroad.com/l/AegisPM",
-        "html": '''
-      <h1>Aegis PM — Privacy-First AI Project Management</h1>
-      <p>A full-stack prototype and sales kit for privacy-first AI project management workflows.</p>
-      <p>Aegis PM is a complete enterprise-oriented demo kit for building, presenting, and validating privacy-first AI workflows for project and product management teams.</p>
-      <p>The local backend redacts sensitive entities before AI processing, sends only tokenized content to the AI workflow, and reconstructs the final business output locally.</p>
-'''
-    }
+
 ]
 
 for p in products:
     filepath = os.path.join("products", p["file"])
-    img_html = f'<img src="{p["img"]}" alt="{p["title"]}" class="product-header-img">' if p["img"] else ''
+    seo_desc = p.get("seo_description", f"Buy {p['title']} on Retro Tech Life — digital products for creators, founders, and modern brands.")
+    og_img = p.get("img", "")
     content = TEMPLATE.format(
         title=p["title"],
-        img_html=img_html,
+        seo_description=seo_desc,
+        og_image=og_img,
+        file=p["file"],
         content_html=p["html"],
         cta_title="Pronto per l'acquisto?",
         cta_desc="Scegli la versione che preferisci su Gumroad.",
